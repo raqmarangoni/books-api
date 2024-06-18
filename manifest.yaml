@@ -1,0 +1,9 @@
+applications:
+  - name: node-app
+    memory: 256M
+    buildpacks:
+      - nodejs_buildpack
+    routes:
+      - route: node-app.cfapps.us10-001.hana.ondemand.com
+    services:
+      - nodeappuaa
